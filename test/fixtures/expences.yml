@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  status: MyString
+  data_in: 2012-08-13
+  data_venc: 2012-08-13
+  data_pg: 2012-08-13
+  value: 1
+  user_id: 1
+
+two:
+  name: MyString
+  description: MyText
+  status: MyString
+  data_in: 2012-08-13
+  data_venc: 2012-08-13
+  data_pg: 2012-08-13
+  value: 1
+  user_id: 1

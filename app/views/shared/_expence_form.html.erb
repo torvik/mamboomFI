@@ -1,0 +1,20 @@
+<%= form_for(@expence) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+  	<%= f.label :name %><br />
+  	<%= f.text_field :name, placeholder: "Name...." %>
+  	<%= f.label :description %><br />
+    <%= f.text_area :description, placeholder: "Compose new expence..." %>
+    <%= f.label :status %><br />
+    <%= f.select :status, (["A Vencer","Pagamento Agendado","Paga"]) %>
+    <%= f.label :data_inicio %><br />
+    <%= date_select "item", "data_in", :use_month_numbers => true %>
+    <%= f.label :data_vencimento%><br />
+    <%= date_select "item1", "data_venc", :use_month_numbers => true %>
+    <%= f.label :data_pagamento %><br />
+    <%= date_select "item2", "data_pg", :use_month_numbers => true %>
+    <%= f.label :data_valor %><br />
+    <%= f.text_field :value, placeholder: "Valor..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

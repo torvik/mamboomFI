@@ -1,0 +1,12 @@
+<li>
+ <span class="content"><%= expence.name %></span>
+  <span class="content"><%= expence.description %></span>
+  <span class="content"><%= expence.status %></span>
+  <span class="content"><%= expence.data_in %></span>
+  <span class="content"><%= expence.data_venc %></span>
+  <span class="content"><%= expence.data_pg %></span>
+  <span class="content"><%= expence.value %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(expence.created_at) %> ago.
+  </span>
+</li>

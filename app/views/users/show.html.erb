@@ -1,0 +1,20 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+    <div class="span8">
+    <% if @user.expences.any? %>
+      <h3>Despesas (<%= @user.expences.count %>)</h3>
+      <ol class="microposts">
+        <%= render @expences %>
+      </ol>
+    <% end %>
+  </div>
+
+</div>
